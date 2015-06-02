@@ -1,0 +1,18 @@
+{
+  "name": "supports-es5",
+  "version": "1.0.0",
+  "description": "does this JavaScript environment conform to ECMAScript 5?",
+  "main": "index.js",
+  "scripts": {
+    "test": "eslint ."
+  },
+  "keywords": [
+    "detect",
+    "es5"
+  ],
+  "author": "Ron Waldon (https://github.com/jokeyrhyme)",
+  "license": "BSD-2-Clause",
+  "devDependencies": {
+    "eslint": "^0.22.1"
+  }
+}
