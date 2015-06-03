@@ -10,7 +10,7 @@ does this JavaScript environment conform to ECMAScript 5?
 I made this after reading [Kangax](https://github.com/kangax)'s terrific
 [ES5 compatibility table](http://kangax.github.io/compat-table/es5/). Rather
 than feature-detect every single piece of ECMAScript 5, I've selected the
-smallest number of tests to identity non-conformant JavaScript environments.
+smallest number of tests to identify non-conformant JavaScript environments.
 
 > `parseInt()` ignores leading zeros
 
