@@ -16,10 +16,11 @@
   "author": "Ron Waldon (https://github.com/jokeyrhyme)",
   "license": "BSD-2-Clause",
   "devDependencies": {
-    "browserify": "^10.2.3",
-    "eslint": "^0.22.1",
-    "istanbul": "^0.3.14",
-    "tape": "^4.0.0"
+    "browserify": "^10.2",
+    "eslint": "^0.23",
+    "eslint-config-standard": "^3.2",
+    "istanbul": "^0.3",
+    "tape": "^4.0"
   },
   "files": [
     "dist/index.js",

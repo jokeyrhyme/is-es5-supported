@@ -2,7 +2,7 @@
 'use strict';
 
 var parseIntIgnoresLeadingZeros = (function () {
-  return parseInt('010') === 10;
+  return parseInt('010', 10) === 10;
 }());
 
 var strictMode = (function () {
