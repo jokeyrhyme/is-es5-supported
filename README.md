@@ -1,8 +1,6 @@
-# is-es5-supported.js
+# is-es5-supported.js [![npm module](https://img.shields.io/npm/v/is-es5-supported.svg)](https://www.npmjs.com/package/is-es5-supported) [![Travis CI Status](https://travis-ci.org/jokeyrhyme/is-es5-supported.svg?branch=master)](https://travis-ci.org/jokeyrhyme/is-es5-supported)
 
 does this JavaScript environment conform to ECMAScript 5?
-
-[![npm module](https://img.shields.io/npm/v/is-es5-supported.svg)](https://www.npmjs.com/package/is-es5-supported)
 
 
 ## What is this?
