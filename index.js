@@ -1,19 +1,19 @@
-'use strict';
+'use strict'
 
 var parseIntIgnoresLeadingZeros = (function () {
-  return parseInt('010', 10) === 10;
-}());
+  return parseInt('010', 10) === 10
+}())
 
 var strictMode = (function () {
-  return !this;
-}());
+  return !this
+}())
 
 var DateISOString = (function () {
-  return !!(Date && Date.prototype && Date.prototype.toISOString);
-}());
+  return !!(Date && Date.prototype && Date.prototype.toISOString)
+}())
 
 module.exports = !!(
   parseIntIgnoresLeadingZeros &&
   strictMode &&
   DateISOString
-);
+)

@@ -1,30 +1,55 @@
 {
   "name": "is-es5-supported",
-  "version": "1.0.0",
   "description": "does this JavaScript environment conform to ECMAScript 5?",
-  "repository": "https://github.com/jokeyrhyme/is-es5-supported.git",
-  "main": "index.js",
-  "scripts": {
-    "build": "browserify -e ./index.js -s isES5Supported > dist/index.js",
-    "pretest": "npm run build",
-    "test": "eslint . && istanbul cover ./tests/"
-  },
-  "keywords": [
-    "detect",
-    "es5"
-  ],
+  "version": "1.0.0",
   "author": "Ron Waldon (https://github.com/jokeyrhyme)",
-  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/jokeyrhyme/is-es5-supported/issues"
+  },
+  "dependencies": {},
   "devDependencies": {
     "browserify": "^13.1.1",
-    "eslint": "^3.12.2",
+    "eslint": "^3.16.1",
     "eslint-config-standard": "^6.2.1",
+    "eslint-plugin-node": "^4.1.0",
+    "eslint-plugin-promise": "^3.4.2",
+    "eslint-plugin-standard": "^2.0.1",
+    "fixpack": "^2.3.1",
+    "flow-bin": "^0.40.0",
     "istanbul": "^0.4.5",
     "tape": "^4.0"
+  },
+  "directories": {
+    "example": "example",
+    "test": "tests"
+  },
+  "engines": {
+    "node": ">=7",
+    "npm": ">=4"
   },
   "files": [
     "dist/index.js",
     "index.js",
     "README.md"
-  ]
+  ],
+  "homepage": "https://github.com/jokeyrhyme/is-es5-supported#readme",
+  "keywords": [
+    "detect",
+    "es5"
+  ],
+  "license": "BSD-2-Clause",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jokeyrhyme/is-es5-supported.git"
+  },
+  "scripts": {
+    "build": "browserify -e ./index.js -s isES5Supported > dist/index.js",
+    "eslint": "eslint --fix --cache .",
+    "fixpack": "fixpack",
+    "flow_check": "flow check",
+    "posttest": "npm run eslint && npm run flow_check && npm run fixpack",
+    "pretest": "npm run build",
+    "test": "istanbul cover ./tests/"
+  }
 }
