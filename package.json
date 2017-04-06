@@ -9,13 +9,13 @@
   "dependencies": {},
   "devDependencies": {
     "browserify": "^14.1.0",
-    "eslint": "^3.16.1",
-    "eslint-config-standard": "^8.0.0",
-    "eslint-plugin-node": "^4.1.0",
-    "eslint-plugin-promise": "^3.4.2",
-    "eslint-plugin-standard": "^2.0.1",
+    "eslint": "^3.19.0",
+    "eslint-config-standard": "^10.0.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-node": "^4.2.2",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^3.0.1",
     "fixpack": "^2.3.1",
-    "flow-bin": "^0.43.0",
     "istanbul": "^0.4.5",
     "tape": "^4.0"
   },
@@ -47,9 +47,8 @@
     "build": "browserify -e ./index.js -s isES5Supported > dist/index.js",
     "eslint": "eslint --fix --cache .",
     "fixpack": "fixpack",
-    "flow_check": "flow check",
-    "posttest": "npm run eslint && npm run flow_check && npm run fixpack",
-    "pretest": "npm run build",
+    "posttest": "npm run eslint",
+    "pretest": "npm run build && npm run fixpack",
     "test": "istanbul cover ./tests/"
   }
 }
