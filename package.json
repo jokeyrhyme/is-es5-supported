@@ -15,7 +15,7 @@
     "eslint-plugin-node": "^8.0.0",
     "eslint-plugin-promise": "^4.0.0",
     "eslint-plugin-standard": "^4.0.0",
-    "fixpack": "^2.3.1",
+    "fixpack": "^3.0.6",
     "istanbul": "^0.4.5",
     "tape": "^4.0"
   },
