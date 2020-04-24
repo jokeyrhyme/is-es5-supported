@@ -17,7 +17,7 @@
     "eslint-plugin-standard": "^4.0.0",
     "fixpack": "^2.3.1",
     "istanbul": "^0.4.5",
-    "tape": "^4.0"
+    "tape": "^5.0.0"
   },
   "directories": {
     "example": "example",
